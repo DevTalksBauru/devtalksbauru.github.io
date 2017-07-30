@@ -1,21 +1,27 @@
-<template>
-  <section class="container">
-    <div>
-      <logo/>
-      <h1>Dev Talks BR 🇧🇷</h1>
-    </div>
-  </section>
+<template lang="pug">
+  main
+    dt-header
+
+    .container
+      h1 Dev Talks BR 🇧🇷
+
+    dt-footer
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
+import DtHeader from '~/components/Header'
+import DtFooter from '~/components/Footer'
 
 export default {
   name: 'home',
 
-  components: { Logo }
+  components: { DtHeader, DtFooter }
 }
 </script>
 
-<style>
+<style lang="scss">
+  .container {
+    display: flex;
+    justify-content: center;
+  }
 </style>
