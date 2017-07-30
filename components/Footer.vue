@@ -1,5 +1,5 @@
 <template lang="pug">
-  Footer
+  footer.container
     p Copyright &copy; {{ new Date().getFullYear() }}
 </template>
 

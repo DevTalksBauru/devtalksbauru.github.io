@@ -1,11 +1,8 @@
 <template lang="pug">
-  main
-    dt-header
-
-    .container
-      h1 Dev Talks BR 🇧🇷
-
-    dt-footer
+  .container
+    h1 Dev Talks BR 🇧🇷
+    div
+      img(src="~assets/logo.png")
 </template>
 
 <script>
@@ -18,10 +15,3 @@ export default {
   components: { DtHeader, DtFooter }
 }
 </script>
-
-<style lang="scss">
-  .container {
-    display: flex;
-    justify-content: center;
-  }
-</style>

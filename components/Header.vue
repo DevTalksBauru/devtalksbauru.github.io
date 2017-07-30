@@ -1,9 +1,10 @@
 <template lang="pug">
-  header
+  header.container
     nav
-      ul
-        li
-          a() Home
+      router-link(to="/") Home
+      router-link(to="/podcasts") Podcasts
+      router-link(to="/hackaton") Hackaton
+      router-link(to="/posts") Posts
 </template>
 
 <script>
@@ -11,3 +12,15 @@ export default {
   name: 'header'
 }
 </script>
+
+<style scoped>
+  a {
+    margin-left: 10px;
+    text-decoration: none;
+  }
+
+  .nuxt-link-exact-active {
+    background-color: #3d3d3d;
+    color: #fff;
+  }
+</style>
