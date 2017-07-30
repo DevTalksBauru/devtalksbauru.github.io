@@ -9,6 +9,7 @@
   },
   "scripts": {
     "build": "nuxt build",
+    "predeploy": "npm run generate",
     "deploy": "push-dir --dir=dist --branch=stage --cleanup",
     "dev": "nuxt",
     "generate": "nuxt generate",
