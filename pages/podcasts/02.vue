@@ -1,6 +1,6 @@
 <template lang="pug">
   dt-podcast
-    h1(slot="title") Podcast Title 1
+    h1(slot="title") Podcast Title 2
 </template>
 
 <script>

@@ -19,7 +19,7 @@ export default {
     text-decoration: none;
   }
 
-  .nuxt-link-exact-active {
+  .nuxt-link-exact-active, .nuxt-link-active {
     background-color: #3d3d3d;
     color: #fff;
   }

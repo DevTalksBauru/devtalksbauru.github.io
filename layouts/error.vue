@@ -1,17 +1,14 @@
 <template lang="pug">
   main
-    dt-header
     .container
-      nuxt
-    dt-footer
+      h1 Error
+      pre
+        code {{ error }}
 </template>
 
 <script>
-import DtHeader from '~/components/Header'
-import DtFooter from '~/components/Footer'
-
 export default {
-  components: { DtHeader, DtFooter }
+  props: ['error']
 }
 </script>
 
