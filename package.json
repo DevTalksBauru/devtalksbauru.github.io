@@ -10,7 +10,7 @@
   "scripts": {
     "build": "nuxt build",
     "predeploy": "npm run generate",
-    "deploy": "push-dir --dir=dist --branch=stage --cleanup",
+    "deploy": "push-dir --dir=dist --branch=master --cleanup",
     "dev": "nuxt",
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
