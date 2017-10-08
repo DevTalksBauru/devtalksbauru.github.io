@@ -42,6 +42,11 @@ export default {
     margin: 0;
   }
 
+  #__nuxt {
+    height: 100%;
+    width: 100%;
+  }
+
   .header {
     position: fixed;
     height: 100%;

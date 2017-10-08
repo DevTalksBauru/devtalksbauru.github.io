@@ -5,7 +5,7 @@
   "author": "Ignacio Anaya <ignacio.anaya89@gmail.com>",
   "private": true,
   "dependencies": {
-    "nuxt": "latest"
+    "nuxt": "^1.0.0-rc11"
   },
   "scripts": {
     "build": "nuxt build",
