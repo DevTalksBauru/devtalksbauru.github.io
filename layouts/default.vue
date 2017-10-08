@@ -1,9 +1,7 @@
 <template lang="pug">
-  main
+  main.main
     dt-header
-    .container
-      nuxt
-    dt-footer
+    nuxt
 </template>
 
 <script>
@@ -16,18 +14,48 @@ export default {
 </script>
 
 <style lang="scss">
-  html {
-    font-family: courier;
+  @import url('https://fonts.googleapis.com/css?family=Anton|Open+Sans+Condensed:300');
+
+  * {
+    box-sizing: content-box;
   }
 
-  ul {
-    flex-direction: column;
+  html,
+  body {
+    height: 100%;
+    min-height: 100%;
+    width: 100%;
   }
 
-  .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  body {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 2rem;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    z-index: auto;
   }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Anton', sans-serif;
+    margin: 0;
+  }
+
+  .header {
+    position: fixed;
+    height: 100%;
+    width: auto;
+    z-index: 1;
+
+    &:hover {
+      width: 100%;
+    }
+  }
+
+  .main {
+    height: 100%;
+    width: 100%;
+  }
+
 </style>
