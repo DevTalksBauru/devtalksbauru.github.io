@@ -1,15 +1,15 @@
 <template lang="pug">
-  .container
-    h1 Posts
-    ul
-      li
-        router-link(to="/posts/01") Post 01
-        router-link(to="/posts/02") Post 02
+    .page
+      article.article
+        aside.sidebar.sidebar--one
+        section.section.section--one
+          h1.section__title
+            span.section__block Talks
 </template>
 
 <script>
 
 export default {
-  name: 'podcasts'
+  name: 'talks'
 }
 </script>

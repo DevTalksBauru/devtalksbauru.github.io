@@ -1,10 +1,10 @@
 <template lang="pug">
-  .container
-    h1 Podcasts
-    ul
-      li
-        router-link(to="/podcasts/01") Podcast 01
-        router-link(to="/podcasts/02") Podcast 02
+  .page
+    article.article
+      aside.sidebar.sidebar--one
+      section.section.section--one
+        h1.section__title
+          span.section__block Soon
 </template>
 
 <script>

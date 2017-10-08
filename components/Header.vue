@@ -17,10 +17,23 @@
         router-link(to="/", class="nav__link") Home
       li.nav__item.nav__item--talks
         router-link(to="/posts", class="nav__link") Talks
+        ul.sub-nav.sub-nav--talks
+          li
+            p.sub-nav__text talks
+          li
+            router-link(to="/posts/01", class="sub-nav__link") DevTalks 01
+          li
+            router-link(to="/posts/02", class="sub-nav__link") DevTalks 02
       li.nav__item.nav__item--podcasts
         router-link(to="/hackathon", class="nav__link") Hackathon
+        ul.sub-nav.sub-nav--hackathon
+          li
+            p.sub-nav__text Soon
       li.nav__item.nav__item--hackathon
         router-link(to="/podcasts", class="nav__link") Podcasts
+        ul.sub-nav.sub-nav--podcasts
+          li
+            p.sub-nav__text Soon
 </template>
 
 <script>
