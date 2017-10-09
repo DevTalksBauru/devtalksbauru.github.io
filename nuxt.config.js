@@ -28,6 +28,7 @@ module.exports = {
       { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' },
       { rel: 'manifest', href: '/manifest.json' },
       { rel: 'mask-icon', href: '/safari-pinned-tab.svg', color: '#212020' }
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Anton|Open+Sans+Condensed:300' }
     ]
   },
   /*

@@ -14,7 +14,6 @@ export default {
 </script>
 
 <style lang="scss">
-  @import url('https://fonts.googleapis.com/css?family=Anton|Open+Sans+Condensed:300');
 
   * {
     box-sizing: content-box;
