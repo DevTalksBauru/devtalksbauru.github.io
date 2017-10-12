@@ -46,17 +46,6 @@ export default {
     width: 100%;
   }
 
-  .header {
-    position: fixed;
-    height: 100%;
-    width: auto;
-    z-index: 1;
-
-    &:hover {
-      width: 100%;
-    }
-  }
-
   .main {
     height: 100%;
     width: 100%;

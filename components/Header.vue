@@ -2,7 +2,7 @@
   header.header
     nav.nav
       li.nav__item.nav__item--logo
-        svg#Balloon(data-name='Balloon', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 2000 2000')
+        svg.logo#Balloon(data-name='Balloon', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 2000 2000')
           defs
             style.
              .cls-1 { fill: #212020; stroke: #f4ece0; stroke-linejoin: round; stroke-width: 10px; } .cls-1, .cls-2, .cls-3 { fill-rule: evenodd; } .cls-2 { fill: #f5623d; } .cls-3 { fill: #f4ece0; }
@@ -17,23 +17,11 @@
         router-link(to="/", class="nav__link") Home
       li.nav__item.nav__item--talks
         router-link(to="/posts", class="nav__link") Talks
-        ul.sub-nav.sub-nav--talks
-          li
-            p.sub-nav__text talks
-          li
-            router-link(to="/posts/01", class="sub-nav__link") DevTalks 01
-          li
-            router-link(to="/posts/02", class="sub-nav__link") DevTalks 02
-      li.nav__item.nav__item--podcasts
-        router-link(to="/hackathon", class="nav__link") Hackathon
-        ul.sub-nav.sub-nav--hackathon
-          li
-            p.sub-nav__text Soon
       li.nav__item.nav__item--hackathon
         router-link(to="/podcasts", class="nav__link") Podcasts
-        ul.sub-nav.sub-nav--podcasts
-          li
-            p.sub-nav__text Soon
+      li.nav__item.nav__item--podcasts
+        router-link(to="/hackathon", class="nav__link") Hackathon
+
 </template>
 
 <script>
@@ -48,10 +36,6 @@ export default {
     height: 100%;
     width: auto;
     z-index: 1;
-
-    &:hover {
-      width: 100%;
-    }
   }
 
   .nav {
@@ -91,60 +75,18 @@ export default {
     }
   }
 
-  .sub-nav {
-    color: #7f8c8d;
-    font-size: 100px;
-    list-style: none;
-    left: 0;
-    right: 0;
-    top: 0;
-    margin: 0;
-    overflow: auto;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    padding: 0;
-    text-align: center;
-    transition: all .3s linear;
-    z-index: auto;
+  .logo {
 
-    &:not(:hover) {
-      opacity: 0;
-      visibility: hidden;
+    * {
+      transition: fill .2s linear;
     }
 
-    &--hackathon {
-      background-color: #191818;
-    }
+    &:hover {
 
-    &--podcasts {
-      background-color: #56555A;
+      .cls-2,
+      .cls-3 {
+        fill: white;
+      }
     }
-
-    &--talks {
-      background-color: #2c3e50;
-    }
-
-    .nav__link:hover ~ & {
-      @extend %show-me;
-    }
-
-    &__link {
-      color: white;
-      font-size: 1.5rem;
-      text-decoration: none;
-    }
-
-    &__text {
-      bottom: 0;
-      opacity: .15;
-      position: fixed;
-      right: -14px;
-    }
-  }
-
-  %show-me {
-    opacity: 1;
-    visibility: visible;
   }
 </style>
