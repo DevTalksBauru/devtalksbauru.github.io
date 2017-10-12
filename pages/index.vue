@@ -13,6 +13,8 @@
         h2.section__title.section__title--two
           span.section__block About
           span.section__block Us
+        p.section__text We are a small group of developers moving the community with talks and events.
+
     article.article.article--three
       aside.sidebar.sidebar--three
       section.section.section--three
@@ -117,6 +119,7 @@ export default {
       mix-blend-mode: darken;
       bottom: 0;
       font-size: 500%;
+      font-size: 12vw;
       position: absolute;
       right: 5px;
       text-align: right;
@@ -124,10 +127,11 @@ export default {
 
       &--two {
         color: #34495E;
-        bottom: 10%;
+        bottom: auto;
         left: 20%;
         right: auto;
         text-align: left;
+        top: 0;
       }
 
       &--three {
@@ -138,6 +142,14 @@ export default {
 
     &__block {
       display: block;
+    }
+
+    &__text {
+      bottom: 0;
+      position: absolute;
+      right: 15px;
+      text-align: right;
+      width: 50%;
     }
   }
 

@@ -61,6 +61,7 @@ export default {
       text-transform: lowercase;
       text-decoration: none;
       transition: transform .35s linear;
+      pointer-events: none;
       position: relative;
       z-index: 2;
 
