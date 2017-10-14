@@ -57,6 +57,7 @@ export default {
       display: block;
       color: #ef4a2f;
       font-weight: normal;
+      font-size: 2.5vw;
       height: 40px;
       text-transform: lowercase;
       text-decoration: none;
@@ -77,6 +78,7 @@ export default {
   }
 
   .logo {
+    width: 15vw;
 
     * {
       transition: fill .2s linear;
