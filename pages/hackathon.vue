@@ -10,6 +10,6 @@
 <script>
 
 export default {
-  name: 'podcasts'
+  name: 'hackathon'
 }
 </script>

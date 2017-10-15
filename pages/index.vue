@@ -76,6 +76,10 @@ export default {
       position: relative;
       width: 100%;
 
+      @media (max-width: 686px) {
+        background-attachment: unset;
+      }
+
       &::before {
         content: '';
         height: 100%;
@@ -132,6 +136,10 @@ export default {
       justify-content: center;
       padding: 0 30px;
 
+      @media (max-width: 686px) {
+        padding: 0 15px;
+      }
+
       &--one {
         background-color: rgba(white, .5);
         mix-blend-mode: overlay;
@@ -152,6 +160,10 @@ export default {
       font-size: 500%;
       font-size: 12vw;
       text-transform: uppercase;
+
+      @media (max-width: 686px) {
+        font-size: 20vw;
+      }
 
       &--one {
         display: flex;
@@ -189,10 +201,22 @@ export default {
       font-size: 2.5vw;
       margin: 0;
 
+      @media (max-width: 686px) {
+        font-size: 5vw;
+      }
+
+      @media (max-width: 480px) {
+        font-size: 6vw;
+      }
+
       &--two {
         color: #333;
         text-align: left;
         width: 60%;
+
+        @media (max-width: 789px) {
+          width: 100%;
+        }
       }
 
       &--three {
@@ -226,6 +250,10 @@ export default {
         display: block;
         transition: fill .2s linear;
         width: 6vw;
+
+        @media (max-width: 789px) {
+          width: 10vw;
+        }
       }
     }
   }
