@@ -74,6 +74,10 @@ export default {
         background-attachment: unset;
       }
 
+      @media (max-width: 989px) {
+        background-size: auto 100%;
+      }
+
       &::before {
         content: '';
         height: 100%;
