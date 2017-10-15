@@ -11,7 +11,7 @@
       aside.home__sidebar.home__sidebar--two
       article.home__content.home__content--two
         h2.home__title.home__title--two
-          span About
+          span About Us
         p.home__text.home__text--two We are a small group of developers moving the community with talks and events in Bauru - SP.
         p.home__text.home__text--two They are totally free, the companies give us their space and food so all the magic happens there. It's a mix between partnership, friendship and sharing!
 
@@ -167,6 +167,7 @@ export default {
 
       &--two {
         color: #34495E;
+        mix-blend-mode: multiply;
         position: relative;
         text-align: left;
         top: 0;
@@ -189,8 +190,9 @@ export default {
       margin: 0;
 
       &--two {
+        color: #333;
         text-align: left;
-        width: 45%;
+        width: 60%;
       }
 
       &--three {
