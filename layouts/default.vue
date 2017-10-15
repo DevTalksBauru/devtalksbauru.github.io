@@ -51,4 +51,8 @@ export default {
     width: 100%;
   }
 
+  svg:not(:root) {
+    overflow: hidden;
+  }
+
 </style>
