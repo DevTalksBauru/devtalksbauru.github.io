@@ -68,11 +68,14 @@ export default {
     }
 
     &__item {
-      max-width: 200px;
       width: auto;
 
-      @media (max-width: 789px) {
-        margin: 10px 0;
+      &:not(:first-of-type) {
+        margin: 5% 0;
+
+        @media (max-width: 789px) {
+          margin: 10% 0;
+        }
       }
     }
 
