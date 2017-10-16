@@ -99,7 +99,7 @@ export default {
         background-image: url(~assets/home-02.jpg);
         background-position: center right;
         background-attachment: unset;
-        background-size: contain;
+        background-size: auto 100%;
 
         &::before {
           background-color: rgba(white, .6);
@@ -123,7 +123,7 @@ export default {
       height: 100%;
 
       &--two {
-        background-color: transparent;
+        background-color: white;
       }
     }
 
@@ -146,6 +146,10 @@ export default {
 
       &--two {
         background-color: rgba(#ddd, .5);
+
+        @media (max-width: 989px) {
+          background-color: rgba(#ddd, .85);
+        }
       }
 
       &--three {
@@ -160,7 +164,7 @@ export default {
       text-transform: uppercase;
 
       @media (max-width: 686px) {
-        font-size: 20vw;
+        font-size: 19vw;
       }
 
       &--one {
@@ -199,6 +203,10 @@ export default {
       font-size: 2.5vw;
       margin: 0;
 
+      @media (max-width: 989px) {
+        font-size: 4vw;
+      }
+
       @media (max-width: 686px) {
         font-size: 5vw;
       }
@@ -208,11 +216,11 @@ export default {
       }
 
       &--two {
-        color: #333;
+        color: #000;
         text-align: left;
         width: 60%;
 
-        @media (max-width: 789px) {
+        @media (max-width: 989px) {
           width: 100%;
         }
       }
@@ -257,10 +265,11 @@ export default {
 
       &::after {
         background-color: black;
-        bottom: 0;
+        bottom: 20px;
         height: 5px;
-        opacity: 0;
         left: 0;
+        transform: scale(0);
+        transform-origin: bottom center;
       }
 
       &::before {
@@ -269,7 +278,7 @@ export default {
       }
 
       &:hover::after {
-        opacity: 1;
+        transform: scale(1);
       }
 
       &:hover::before {
