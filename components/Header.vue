@@ -106,6 +106,12 @@ export default {
         transform: translateX(-120%);
         transition: transform .2s linear;
         width: 120%;
+
+        @media (max-width: 789px) {
+          bottom: -2px;
+          height: 7vh;
+          width: 22vw;
+        }
       }
 
       &:hover::before {
