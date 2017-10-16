@@ -265,7 +265,7 @@ export default {
 
       &::after {
         background-color: black;
-        bottom: 20px;
+        bottom: 0;
         height: 5px;
         left: 0;
         transform: scale(0);
