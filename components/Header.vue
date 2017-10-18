@@ -74,7 +74,7 @@ export default {
         margin: 5% 0;
 
         @media (max-width: 789px) {
-          margin: 10% 0;
+          margin: 25% 0;
         }
       }
     }

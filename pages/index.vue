@@ -70,11 +70,11 @@ export default {
       position: relative;
       width: 100%;
 
-      @media (max-width: 686px), only screen and (min-device-pixel-ratio: 2) {
+      @media (max-width: 686px), screen and (min-device-pixel-ratio: 2) {
         background-attachment: unset;
       }
 
-      @media (max-width: 989px), only screen and (min-device-pixel-ratio: 2)  {
+      @media (max-width: 989px), screen and (min-device-pixel-ratio: 2)  {
         background-size: auto 100%;
       }
 
@@ -87,7 +87,7 @@ export default {
 
       &--one {
         background-image: url(~assets/home-01.jpg);
-        background-position: 0 center;
+        background-position: center;
 
         &::before {
           background-color: rgba(#96281B, .9);
@@ -109,7 +109,7 @@ export default {
 
       &--three {
         background-image: url(~assets/home-03.jpg);
-        background-position: 0 bottom;
+        background-position: right bottom;
 
         &::before {
           background-color: rgba(34, 49, 63, 0.75);
