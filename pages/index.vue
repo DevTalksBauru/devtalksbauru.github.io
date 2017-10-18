@@ -70,11 +70,11 @@ export default {
       position: relative;
       width: 100%;
 
-      @media (max-width: 686px) {
+      @media (max-width: 686px), only screen and (min-device-pixel-ratio: 2) {
         background-attachment: unset;
       }
 
-      @media (max-width: 989px) {
+      @media (max-width: 989px), only screen and (min-device-pixel-ratio: 2)  {
         background-size: auto 100%;
       }
 
