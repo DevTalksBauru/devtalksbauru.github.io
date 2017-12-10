@@ -1,23 +1,23 @@
 <template lang="pug">
   .page.home
-    section.home__section.home__section--one
-      aside.home__sidebar.home__sidebar--one
-      article.home__content.home__content--one
+    section.page__section.home__section.home__section--one
+      aside.page__sidebar.home__sidebar.home__sidebar--one
+      article.page__content.home__content.home__content--one
         h1.home__title.home__title--one
           span We
           span Are
           span DevTalks
-    section.home__section.home__section--two
-      aside.home__sidebar.home__sidebar--two
-      article.home__content.home__content--two
+    section.page__section.home__section.home__section--two
+      aside.page__sidebar.home__sidebar.home__sidebar--two
+      article.page__content.home__content.home__content--two
         h2.home__title.home__title--two
           span About Us
         p.home__text.home__text--two We are a small group of developers moving the community with talks and events in Bauru - SP.
         p.home__text.home__text--two They are totally free, the companies give us their space and food so all the magic happens there. It's a mix between partnership, friendship and sharing!
 
-    section.home__section.home__section--three
-      aside.home__sidebar.home__sidebar--three
-      article.home__content.home__content--three
+    section.page__section.home__section.home__section--three
+      aside.page__sidebar.home__sidebar.home__sidebar--three
+      article.page__content.home__content.home__content--three
         h2.home__title.home__title--three
           span Join Us!
         p.home__text.home__text--three If you have something cool to share or wanna be a part of it,
@@ -54,21 +54,8 @@ export default {
 <style lang="scss">
 
   .home {
-    height: 100%;
-    width: 100%;
 
     &__section {
-      background-attachment: fixed;
-      background-repeat: no-repeat;
-      background-size: cover;
-      display: grid;
-      grid-template-columns: .5fr 2fr;
-      grid-template-rows: 100% 100%;
-      height: 100%;
-      overflow: hidden;
-      padding: 0;
-      position: relative;
-      width: 100%;
 
       @media (max-width: 686px), screen and (min-device-pixel-ratio: 2) {
         background-attachment: unset;
@@ -119,8 +106,6 @@ export default {
     }
 
     &__sidebar {
-      background: rgba(#000, .75);
-      height: 100%;
 
       &--two {
         background-color: white;
@@ -128,15 +113,6 @@ export default {
     }
 
     &__content {
-      display: flex;
-      flex-direction: column;
-      height: 100%;
-      justify-content: center;
-      padding: 0 30px;
-
-      @media (max-width: 686px) {
-        padding: 0 15px;
-      }
 
       &--one {
         background-color: rgba(white, .5);
@@ -197,7 +173,6 @@ export default {
         display: block;
       }
     }
-
 
     &__text {
       font-size: 2.5vw;

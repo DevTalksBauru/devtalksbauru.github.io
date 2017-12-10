@@ -1,7 +1,7 @@
 <template lang="pug">
-  .page.home
-    section.home__section.home__section--one
-      aside.home__sidebar.home__sidebar--one
+  .page
+    section.page__section.home__section.home__section--one
+      aside.page__sidebar.home__sidebar.home__sidebar--one
       article.home__content.home__content--one
         h1.home__title.home__title--one Soon
         ul.hidden

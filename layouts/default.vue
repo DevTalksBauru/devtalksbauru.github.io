@@ -55,4 +55,40 @@ export default {
     overflow: hidden;
   }
 
+  .page {
+    height: 100%;
+    width: 100%;
+
+    &__section {
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: grid;
+      grid-template-columns: .5fr 2fr;
+      grid-template-rows: 100% 100%;
+      height: 100%;
+      overflow: hidden;
+      padding: 0;
+      position: relative;
+      width: 100%;
+    }
+
+    &__sidebar {
+      background: rgba(#000, .75);
+      height: 100%;
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      justify-content: center;
+      padding: 0 30px;
+
+      @media (max-width: 686px) {
+        padding: 0 15px;
+      }
+    }
+  }
+
 </style>
