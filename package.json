@@ -31,5 +31,9 @@
     "pug": "^2.0.0-rc.2",
     "push-dir": "^0.4.1",
     "sass-loader": "^6.0.6"
+  },
+  "engines": {
+    "node": "8",
+    "npm": "5"
   }
 }
