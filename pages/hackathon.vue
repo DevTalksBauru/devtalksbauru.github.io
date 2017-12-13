@@ -14,14 +14,14 @@
         .hackathon__video
           .filter
           |
-          video.fillWidth(autoplay='', loop='')
-            source(src="~/assets/hackathon-video-bg.mp4", type='video/mp4')
+          video.fillWidth(autoplay, loop)
+            source(src="~/assets/hackathon-video-bg.mp4", type="video/mp4")
             | Your browser does not support the video tag. I suggest you upgrade your browser.
             |
-            source(src="~/assets/hackathon-video-bg.webm" type='video/webm')
+            source(src="~/assets/hackathon-video-bg.webm", type="video/webm")
             | Your browser does not support the video tag. I suggest you upgrade your browser.
-            source(src="~/assets/hackathon-video-bg.ogv" type='video/ogg')
-            | Your browser does not support the video tag. I suggest you upgrade your browser.
+            //- source(src="~/assets/hackathon-video-bg.ogv", type="video/ogg")
+            //- | Your browser does not support the video tag. I suggest you upgrade your browser.
 
 </template>
 
