@@ -9,7 +9,7 @@
           span.hackathon__logo
             img.hackathon__img(src="~/assets/hackathon-logo.svg", alt="hackathon logo")
 
-          a.hackathon__button(href="https://www.sympla.com.br/devtalks-hackathon__215562", target="_blank") Inscreva-se!
+          a.hackathon__button(href="https://photos.app.goo.gl/KZGbVZYUojxUp7EI3", target="_blank") Veja como foi
 
         .hackathon__video
           .filter
