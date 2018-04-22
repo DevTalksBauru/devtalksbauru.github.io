@@ -1,13 +1,24 @@
 <template lang="pug">
   .page
-    section.page__section.home__section.home__section--one
-      aside.page__sidebar.home__sidebar.home__sidebar--one
+    section.page__section.home__section.talks__section
+      aside.page__sidebar.talks__sidebar
       article.home__content.home__content--one
-        h1.home__title.home__title--one Soon
-        ul.hidden
-          li
+        ul.page__list
+          li.page__list-item
             router-link(to="/posts/01", class="sub-nav__link") DevTalks 01
-          li
+          li.page__list-item
+            router-link(to="/posts/02", class="sub-nav__link") DevTalks 02
+          li.page__list-item
+            router-link(to="/posts/01", class="sub-nav__link") DevTalks 01
+          li.page__list-item
+            router-link(to="/posts/02", class="sub-nav__link") DevTalks 02
+          li.page__list-item
+            router-link(to="/posts/01", class="sub-nav__link") DevTalks 01
+          li.page__list-item
+            router-link(to="/posts/02", class="sub-nav__link") DevTalks 02
+          li.page__list-item
+            router-link(to="/posts/01", class="sub-nav__link") DevTalks 01
+          li.page__list-item
             router-link(to="/posts/02", class="sub-nav__link") DevTalks 02
 </template>
 
@@ -22,4 +33,5 @@ export default {
   .hidden {
     display: none;
   }
+
 </style>

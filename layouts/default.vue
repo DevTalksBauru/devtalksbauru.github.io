@@ -41,6 +41,15 @@ export default {
     margin: 0;
   }
 
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    list-style: none;
+  }
+
   #__nuxt {
     height: 100%;
     width: 100%;
@@ -87,6 +96,19 @@ export default {
 
       @media (max-width: 686px) {
         padding: 0 15px;
+      }
+    }
+
+    &__list-item {
+      height: 25vh;
+      width: 100%;
+
+      &:nth-child(odd) {
+        background: black;
+      }
+
+      &:nth-child(even) {
+        background: white;
       }
     }
   }

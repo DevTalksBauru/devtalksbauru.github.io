@@ -123,6 +123,7 @@ export default {
       }
 
       &.nuxt-link-exact-active {
+        color: white;
         cursor: default;
 
         &::before {
@@ -141,6 +142,10 @@ export default {
       height: 3.5vh;
       margin: 0 10px 0 0;
       width: 2vw;
+
+      .nuxt-link-exact-active & {
+        fill: white;
+      }
 
       @media (max-width: 789px) {
         height: 100%;
