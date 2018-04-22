@@ -100,7 +100,9 @@ export default {
     }
 
     &__list-item {
+      box-sizing: border-box;
       height: 25vh;
+      margin: 0 0 20px;
       width: 100%;
 
       &:nth-child(odd) {
