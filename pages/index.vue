@@ -1,13 +1,13 @@
 <template lang="pug">
   .page.home
-    section.page__section.home__section.home__section--one
+    section#home.page__section.home__section.home__section--one
       aside.page__sidebar.home__sidebar.home__sidebar--one
       article.page__content.home__content.home__content--one
         h1.home__title.home__title--one
           span We
           span Are
           span DevTalks
-    section.page__section.home__section.home__section--two
+    section#about.page__section.home__section.home__section--two
       aside.page__sidebar.home__sidebar.home__sidebar--two
       article.page__content.home__content.home__content--two
         h2.home__title.home__title--two
@@ -15,7 +15,7 @@
         p.home__text.home__text--two We are a small group of developers moving the community with talks and events in Bauru - SP.
         p.home__text.home__text--two They are totally free, the companies give us their space and food so all the magic happens there. It's a mix between partnership, friendship and sharing!
 
-    section.page__section.home__section.home__section--three
+    section#contact.page__section.home__section.home__section--three
       aside.page__sidebar.home__sidebar.home__sidebar--three
       article.page__content.home__content.home__content--three
         h2.home__title.home__title--three
