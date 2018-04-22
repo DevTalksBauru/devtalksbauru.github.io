@@ -212,7 +212,9 @@ export default {
     &__panel {
       align-items: center;
       display: flex;
+      flex-wrap: wrap;
       justify-content: center;
+      margin-top: 20px;
       padding: 0;
       width: 100%;
     }
@@ -230,6 +232,8 @@ export default {
       position: relative;
 
       @media (max-width: 789px) {
+        height: 50px;
+        margin: 0 5px;
         width: 10vw;
       }
 
