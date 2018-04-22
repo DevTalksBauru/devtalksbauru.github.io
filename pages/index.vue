@@ -35,6 +35,9 @@
             a.home__link.home__link--facebook(href="https://www.facebook.com/devtalksbauru", target="_blank")
 
           li.home__item
+            a.home__link.home__link--instagram(href="https://www.instagram.com/devtalksbauru", target="_blank")
+
+          li.home__item
             a.home__link.home__link--mail(href="mailto:devtalksbauru@gmail.com", target="_blank")
 
 
@@ -239,12 +242,13 @@ export default {
       }
 
       &::after {
-        background-color: black;
+        background-color: #ef4a2f;
+        mix-blend-mode: screen;
         bottom: 0;
-        height: 5px;
-        left: 0;
+        height: 100%;
+        right: 0;
         transform: scale(0);
-        transform-origin: bottom center;
+        transform-origin: top center;
       }
 
       &::before {
@@ -257,11 +261,15 @@ export default {
       }
 
       &:hover::before {
-        transform: translateY(-5px);
+        transform: scale(.9);
       }
 
       &--facebook::before {
         background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20470.513%20470.513%22%3E%3Cpath%20fill%3D%22%23FFFFFF%22%20d%3D%22M271.52%20154.17v-40.54c0-6.087.28-10.8.85-14.13.567-3.336%201.857-6.616%203.86-9.854%201.998-3.236%205.235-5.47%209.705-6.708%204.476-1.24%2010.424-1.858%2017.85-1.858h40.54V0h-64.81c-37.5%200-64.433%208.897-80.803%2026.69-16.368%2017.8-24.55%2044.015-24.55%2078.66v48.82h-48.543v81.085h48.538V470.51h97.362V235.257h64.805l8.566-81.086h-73.37z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E');
+      }
+
+      &--instagram::before {
+        background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20512%20512%22%3E%3Cpath%20fill%3D%22%23FFFFFF%22%20d%3D%22M352%200H160C71.648%200%200%2071.648%200%20160v192c0%2088.352%2071.648%20160%20160%20160h192c88.352%200%20160-71.648%20160-160V160C512%2071.648%20440.352%200%20352%200zm112%20352c0%2061.76-50.24%20112-112%20112H160c-61.76%200-112-50.24-112-112V160C48%2098.24%2098.24%2048%20160%2048h192c61.76%200%20112%2050.24%20112%20112v192z%22%2F%3E%3Cpath%20fill%3D%22%23FFFFFF%22%20d%3D%22M256%20128c-70.688%200-128%2057.312-128%20128s57.312%20128%20128%20128%20128-57.312%20128-128-57.312-128-128-128zm0%20208c-44.096%200-80-35.904-80-80%200-44.128%2035.904-80%2080-80s80%2035.872%2080%2080c0%2044.096-35.904%2080-80%2080z%22%2F%3E%3Ccircle%20fill%3D%22%23FFFFFF%22%20cx%3D%22393.6%22%20cy%3D%22118.4%22%20r%3D%2217.056%22%2F%3E%3C%2Fsvg%3E');
       }
 
       &--twitter::before {
