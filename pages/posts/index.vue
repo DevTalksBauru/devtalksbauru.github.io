@@ -2,8 +2,8 @@
   .page
     section.page__section.home__section.talks__section
       aside.talks__sidebar
-      article.home__content.home__content--one
-        ul.page__list.talks__list.hidden
+      article.home__content.home__content--one.talks__content
+        ul.page__list.talks__list
           li.page__list-item.talks__list-item
             router-link(to="/posts/01", class="sub-nav__link")
               strong A Verdade sobe Frameworks
@@ -84,6 +84,7 @@ export default {
       &::before {
         background-color: rgba(32, 32, 117, 0.9);
         mix-blend-mode: darken;
+        position: fixed !important;
       }
     }
 
@@ -93,6 +94,11 @@ export default {
       height: 100%;
       position: fixed;
       width: 20%;
+    }
+
+    &__content {
+      background-color: transparent;
+      mix-blend-mode: hard-light;
     }
 
     &__list {

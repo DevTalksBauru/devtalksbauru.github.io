@@ -50,12 +50,7 @@ export default {
     list-style: none;
   }
 
-  #__nuxt {
-    height: 100%;
-    width: 100%;
-  }
-
-  .main {
+  #__nuxt, #__layout, .main {
     height: 100%;
     width: 100%;
   }
