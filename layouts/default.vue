@@ -95,18 +95,11 @@ export default {
     }
 
     &__list-item {
+      background: white;
       box-sizing: border-box;
       height: 25vh;
       margin: 0 0 20px;
       width: 100%;
-
-      &:nth-child(odd) {
-        background: black;
-      }
-
-      &:nth-child(even) {
-        background: white;
-      }
     }
   }
 

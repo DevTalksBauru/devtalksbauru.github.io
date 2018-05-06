@@ -2,7 +2,9 @@
   .page
     section.page__section.home__section.talks__section
       aside.talks__sidebar
-      article.home__content.home__content--one.talks__content
+      article.talks__content
+        h2.talks__title
+          span Talks
         ul.page__list.talks__list
           li.page__list-item.talks__list-item
             router-link(to="/posts/01", class="sub-nav__link")
@@ -80,16 +82,10 @@ export default {
       background-image: url(~assets/talks-bg.jpg);
       background-position: center;
       overflow: auto;
-
-      &::before {
-        background-color: rgba(32, 32, 117, 0.9);
-        mix-blend-mode: darken;
-        position: fixed !important;
-      }
     }
 
     &__sidebar::before {
-      background: rgba(#000, .75);
+      background: rgba(#FFF, .75);
       content: '';
       height: 100%;
       position: fixed;
@@ -97,8 +93,15 @@ export default {
     }
 
     &__content {
-      background-color: transparent;
+      background-color: rgba(255,255,255,0.5);
       mix-blend-mode: hard-light;
+    }
+
+    &__title {
+      font-size: 500%;
+      font-size: 10vw;
+      text-transform: uppercase;
+      text-align: center;
     }
 
     &__list {
