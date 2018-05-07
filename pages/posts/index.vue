@@ -5,7 +5,7 @@
       article.talks__content
         h2.talks__title
           span Talks
-        ul.page__list.talks__list
+        ul.page__list.page__list--tiles
           li.page__list-item.talks__list-item
             router-link(to="/posts/01", class="sub-nav__link")
               strong A Verdade sobe Frameworks
@@ -72,10 +72,6 @@ export default {
 
 <style lang="scss">
 
-  .hidden {
-    display: none !important;
-  }
-
   .talks {
 
     &__section {
@@ -85,7 +81,7 @@ export default {
     }
 
     &__sidebar::before {
-      background: rgba(#FFF, .75);
+      background: rgba(29, 21, 84, 0.6);
       content: '';
       height: 100%;
       position: fixed;
@@ -93,22 +89,15 @@ export default {
     }
 
     &__content {
-      background-color: rgba(255,255,255,0.5);
       mix-blend-mode: hard-light;
     }
 
     &__title {
+      color: #DBD3E9;
       font-size: 500%;
-      font-size: 10vw;
+      font-size: 8vw;
+      padding: 20px 20px 0;
       text-transform: uppercase;
-      text-align: center;
-    }
-
-    &__list {
-      align-items: stretch;
-      display: flex;
-      flex-wrap: wrap;
-      padding: 20px 0 0 20px;
     }
 
     &__list-item {
@@ -117,7 +106,6 @@ export default {
       box-sizing: border-box;
       max-width: 100%;
       margin: 0 20px 20px 0;
-      padding: 15px;
     }
   }
 

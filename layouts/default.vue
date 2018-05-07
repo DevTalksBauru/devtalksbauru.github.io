@@ -94,12 +94,39 @@ export default {
       }
     }
 
+    &__list {
+     align-items: stretch;
+     display: flex;
+     flex-wrap: wrap;
+
+     &--tiles {
+        padding: 20px 0 0 20px;
+     }
+
+     &--bars {
+        flex-direction: column;
+        padding: 20px;
+     }
+    }
+
     &__list-item {
-      background: white;
+      background: #DBD3E9;
+      border-radius: 0 25px;
       box-sizing: border-box;
-      height: 25vh;
       margin: 0 0 20px;
       width: 100%;
+
+      a {
+       color: black;
+       display: block;
+       min-height: 100px;
+       padding: 20px;
+       text-decoration: none;
+
+       span {
+        font-size: 20px;
+       }
+      }
     }
   }
 

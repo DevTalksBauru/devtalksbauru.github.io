@@ -1,6 +1,10 @@
 <template lang="pug">
-  dt-podcast
-    h1(slot="title") Podcast Title 1
+  .page
+    section.page__section.home__section.podcasts__section
+      aside.podcasts__sidebar
+      article.podcasts__content
+        dt-podcast
+          h1(slot="title") Entrevista com RH
 </template>
 
 <script>

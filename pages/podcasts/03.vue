@@ -1,6 +1,6 @@
 <template lang="pug">
   dt-podcast
-    h1(slot="title") Organizando um Hackathon
+    h1(slot="title") Devs & Q.A's
 </template>
 
 <script>

@@ -22,7 +22,7 @@ export default {
   props: {
     audio: {
       type: String,
-      default: 'https://p.scdn.co/mp3-preview/7b179aa9d8b058794954255cbf7c2664487be9dc?cid=555776939cf64ea6b39915cf4d5d875d'
+      default: 'https://archive.org/embed/DT-1-Entrevista_Com_RH'
     }
   }
 }
