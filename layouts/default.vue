@@ -50,6 +50,10 @@ export default {
     list-style: none;
   }
 
+  iframe {
+    border: 0;
+  }
+
   #__nuxt, #__layout, .main {
     height: 100%;
     width: 100%;
@@ -92,18 +96,26 @@ export default {
       }
 
       &--podcasts {
-        background-image: url(~assets/podcasts-bg.jpg);
         background-position: center;
+        height: auto;
         overflow: auto;
+
+        &::before {
+          background-image: url(/_nuxt/img/podcasts-bg.b3690d5.jpg);
+          content: '';
+          position: fixed;
+          height: 100%;
+          width: 100%;
+        }
       }
     }
 
     &__sidebar {
-      
+
       &--home {
         height: 100%;
       }
-      
+
       &--podcasts::before {
         background: rgba(3, 22, 57, 0.6);
         content: '';
@@ -153,16 +165,84 @@ export default {
       width: 100%;
 
       a {
-       color: black;
-       display: block;
-       min-height: 100px;
-       padding: 20px;
-       text-decoration: none;
+        color: black;
+        display: block;
+        min-height: 100px;
+        padding: 20px;
+        text-decoration: none;
 
-       span {
-        font-size: 20px;
-       }
+        strong {
+          font-weight: bold;
+        }
+
+        span {
+          font-size: 20px;
+        }
       }
+    }
+
+    &__post {
+      align-items: center;
+      background: #DBD3E9;
+      border-radius: 0 25px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      margin: 20px;
+      padding: 20px 20px 40px;
+      width: calc(100% - 40px);
+    }
+  }
+
+  .post {
+
+    * {
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3.5rem;
+      text-transform: uppercase;
+    }
+
+    h4 {
+      font-size: 1.5rem;
+    }
+
+    p {
+      margin-top: 0;
+    }
+
+    &__link {
+      align-items: center;
+      border: 2px solid #DBD3E9;
+      border-radius: 100%;
+      display: flex;
+      height: 48px;
+      justify-content: center;
+      margin: 40px 0 0 20px;
+      width: 48px;
+
+      &:hover {
+        background: #DBD3E9;
+
+        * {
+          fill: black;
+        }
+      }
+    }
+
+    &__divider {
+      border: 1px solid black;
+      margin: 30px auto;
+      width: 100px;
+    }
+
+    &__player {
+      background: black;
+      padding: 15px;
+      border-radius: 50px;
+      min-width: 90%;
     }
   }
 
