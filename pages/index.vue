@@ -60,21 +60,6 @@ export default {
 
     &__section {
 
-      @media (max-width: 686px), screen and (min-device-pixel-ratio: 2) {
-        background-attachment: unset;
-      }
-
-      @media (max-width: 989px), screen and (min-device-pixel-ratio: 2)  {
-        background-size: auto 100%;
-      }
-
-      &::before {
-        content: '';
-        height: 100%;
-        position: absolute;
-        width: 100%;
-      }
-
       &--one {
         background-image: url(~assets/home-01.jpg);
         background-position: center;
@@ -109,6 +94,11 @@ export default {
     }
 
     &__sidebar {
+
+      &--one,
+      &--three {
+        background: rgba(#000, .75);
+      }
 
       &--two {
         background-color: white;

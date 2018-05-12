@@ -56,10 +56,8 @@
               strong Back-end & Front-end em Harmonia com Atomic Design
               br
               span 06/07/17
-          li.page__list-item.talks__list-item
-            router-link(to="/posts/01", class="sub-nav__link") #08 - Testes Automatizados para Web com Cucumber, Capybara e Ruby
-          li.page__list-item.talks__list-item
-            router-link(to="/posts/02", class="sub-nav__link") #07 - Funk ou Bossa Nova? Descobrindo o Gênero com Machine Learning
+          // Keep this two list items to make layout consistent
+          li.talks__list-item
           li.talks__list-item
 </template>
 

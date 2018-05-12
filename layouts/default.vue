@@ -75,11 +75,42 @@ export default {
       padding: 0;
       position: relative;
       width: 100%;
+
+      @media (max-width: 686px), screen and (min-device-pixel-ratio: 2) {
+        background-attachment: unset;
+      }
+
+      @media (max-width: 989px), screen and (min-device-pixel-ratio: 2)  {
+        background-size: auto 100%;
+      }
+
+      &::before {
+        content: '';
+        height: 100%;
+        position: absolute;
+        width: 100%;
+      }
+
+      &--podcasts {
+        background-image: url(~assets/podcasts-bg.jpg);
+        background-position: center;
+        overflow: auto;
+      }
     }
 
     &__sidebar {
-      background: rgba(#000, .75);
-      height: 100%;
+      
+      &--home {
+        height: 100%;
+      }
+      
+      &--podcasts::before {
+        background: rgba(3, 22, 57, 0.6);
+        content: '';
+        height: 100%;
+        position: fixed;
+        width: 20%;
+      }
     }
 
     &__content {
@@ -91,6 +122,11 @@ export default {
 
       @media (max-width: 686px) {
         padding: 0 15px;
+      }
+
+      &--podcasts {
+        mix-blend-mode: hard-light;
+        padding: 0;
       }
     }
 
