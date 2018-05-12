@@ -63,6 +63,10 @@ export default {
     overflow: hidden;
   }
 
+  .is-hidden {
+    display: none !important;
+  }
+
   .page {
     height: 100%;
     width: 100%;
@@ -99,14 +103,14 @@ export default {
         background-position: center;
         height: auto;
         overflow: auto;
+      }
 
-        &::before {
-          background-image: url(/_nuxt/img/podcasts-bg.b3690d5.jpg);
-          content: '';
-          position: fixed;
-          height: 100%;
-          width: 100%;
-        }
+      &--podcasts::before {
+        background-image: url(~assets/podcasts-bg.jpg);
+        content: '';
+        position: fixed;
+        height: 100%;
+        width: 100%;
       }
     }
 
@@ -152,7 +156,7 @@ export default {
      }
 
      &--bars {
-        flex-direction: column;
+        flex-direction: column-reverse;
         padding: 20px;
      }
     }

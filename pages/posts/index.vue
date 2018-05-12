@@ -2,7 +2,7 @@
   .page
     section.page__section.home__section.talks__section
       aside.talks__sidebar
-      article.talks__content
+      article.talks__content.is-hidden
         h2.talks__title
           span Talks
         ul.page__list.page__list--tiles

@@ -108,7 +108,7 @@ export default {
     &__content {
 
       &--one {
-        background-color: rgba(white, .5);
+        background-color: rgba(black, .1);
         mix-blend-mode: overlay;
         padding: 0;
       }
@@ -137,13 +137,14 @@ export default {
       }
 
       &--one {
+        color: white;
         display: flex;
         flex-direction: column;
         justify-content: center;
         position: absolute;
         bottom: 0;
         right: 5px;
-        mix-blend-mode: darken;
+        mix-blend-mode: difference;
         text-align: right;
         top: 0;
       }
