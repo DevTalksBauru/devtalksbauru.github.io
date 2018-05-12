@@ -8,18 +8,15 @@
         ul.page__list.page__list--bars
           li.page__list-item
             router-link(to="/podcasts/01", class="sub-nav__link")
-              strong Entrevista com RH
-              br
+              h5 Entrevista com RH
               span 11/03/2018
           li.page__list-item
             router-link(to="/podcasts/02", class="sub-nav__link")
-              strong Organizando um Hackathon
-              br
+              h5 Organizando um Hackathon
               span 04/04/2018
           li.page__list-item
             router-link(to="/podcasts/03", class="sub-nav__link")
-              strong Devs & Q.A's
-              br
+              h5 Devs & Q.A's
               span 07/05/18
           li
 </template>

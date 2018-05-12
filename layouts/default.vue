@@ -38,6 +38,7 @@ export default {
 
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Anton', sans-serif;
+    font-weight: normal;
     margin: 0;
   }
 
@@ -148,8 +149,10 @@ export default {
 
     &__list {
      align-items: stretch;
+     background: #DBD3E9;
      display: flex;
      flex-wrap: wrap;
+     padding: 40px 20px 20px;
 
      &--tiles {
         padding: 20px 0 0 20px;
@@ -157,13 +160,10 @@ export default {
 
      &--bars {
         flex-direction: column-reverse;
-        padding: 20px;
      }
     }
 
     &__list-item {
-      background: #DBD3E9;
-      border-radius: 0 25px;
       box-sizing: border-box;
       margin: 0 0 20px;
       width: 100%;
@@ -172,8 +172,12 @@ export default {
         color: black;
         display: block;
         min-height: 100px;
-        padding: 20px;
+        padding: 0;
         text-decoration: none;
+
+        &:hover {
+          color: #375790;
+        }
 
         strong {
           font-weight: bold;
@@ -188,13 +192,12 @@ export default {
     &__post {
       align-items: center;
       background: #DBD3E9;
-      border-radius: 0 25px;
       box-sizing: border-box;
       display: flex;
       flex-direction: column;
-      margin: 20px;
-      padding: 20px 20px 40px;
-      width: calc(100% - 40px);
+      margin: 20px 0 0;
+      padding: 50px 20px 100px;
+      width: 100%;
     }
   }
 
@@ -204,9 +207,13 @@ export default {
       text-align: center;
     }
 
-    h1 {
-      font-size: 3.5rem;
+    h2 {
+      font-size: 4rem;
       text-transform: uppercase;
+
+      @media (max-width: 686px), screen and (min-device-pixel-ratio: 2) {
+        font-size: 2.5rem;
+      }
     }
 
     h4 {
@@ -215,6 +222,10 @@ export default {
 
     p {
       margin-top: 0;
+
+      @media (max-width: 686px), screen and (min-device-pixel-ratio: 2) {
+        font-size: 1.5rem;
+      }
     }
 
     &__link {

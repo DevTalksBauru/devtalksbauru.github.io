@@ -9,7 +9,7 @@
 
         .page__post.post
           slot(name="title")
-            h1 Podcast Title
+            h2 Podcast Title
 
           slot(name="date")
             h4 Date
