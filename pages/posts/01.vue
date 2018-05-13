@@ -1,6 +1,8 @@
 <template lang="pug">
   dt-post
-    h1(slot="title") 1
+    h2(slot="title") 1
+    h4(slot="date")
+    p(slot="description")
 </template>
 
 <script>

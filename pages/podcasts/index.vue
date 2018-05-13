@@ -3,7 +3,7 @@
     section.page__section.page__section--podcasts
       aside.page__sidebar.page__sidebar--podcasts
       article.page__content.page__content--podcasts
-        h2.podcasts__title
+        h2.page__title
           span Podcasts
         ul.page__list.page__list--bars
           li.page__list-item
@@ -27,23 +27,3 @@ export default {
   name: 'podcasts'
 }
 </script>
-
-
-<style lang="scss">
-
-  .hidden {
-    display: none !important;
-  }
-
-  .podcasts {
-
-    &__title {
-      color: #DBD3E9;
-      font-size: 500%;
-      font-size: 8vw;
-      padding: 20px 20px 0;
-      text-transform: uppercase;
-    }
-  }
-
-</style>

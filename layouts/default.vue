@@ -100,10 +100,19 @@ export default {
         width: 100%;
       }
 
+      &--talks,
       &--podcasts {
         background-position: center;
         height: auto;
         overflow: auto;
+      }
+
+      &--talks::before {
+        background-image: url(~assets/talks-bg.jpg);
+        content: '';
+        position: fixed;
+        height: 100%;
+        width: 100%;
       }
 
       &--podcasts::before {
@@ -121,12 +130,20 @@ export default {
         height: 100%;
       }
 
+      &--talks::before,
       &--podcasts::before {
-        background: rgba(3, 22, 57, 0.6);
         content: '';
         height: 100%;
         position: fixed;
         width: 20%;
+      }
+
+      &--talks::before {
+        background: rgba(29, 21, 84, 0.6);
+      }
+
+      &--podcasts::before {
+        background: rgba(3, 22, 57, 0.6);
       }
     }
 
@@ -141,6 +158,7 @@ export default {
         padding: 0 15px;
       }
 
+      &--talks,
       &--podcasts {
         mix-blend-mode: hard-light;
         padding: 0;
@@ -148,25 +166,33 @@ export default {
     }
 
     &__list {
-     align-items: stretch;
-     background: #DBD3E9;
-     display: flex;
-     flex-wrap: wrap;
-     padding: 40px 20px 20px;
+      align-items: stretch;
+      background: #DBD3E9;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 40px 20px 20px;
 
-     &--tiles {
-        padding: 20px 0 0 20px;
-     }
+      &--tiles {
+        flex-direction: row;
+      }
 
-     &--bars {
+      &--bars {
         flex-direction: column-reverse;
-     }
+      }
     }
 
     &__list-item {
       box-sizing: border-box;
       margin: 0 0 20px;
       width: 100%;
+
+      &--talks {
+        flex: 1 0 350px;
+        align-self: stretch;
+        box-sizing: border-box;
+        max-width: 100%;
+        margin: 0 20px 20px 0;
+      }
 
       a {
         color: black;
@@ -187,6 +213,14 @@ export default {
           font-size: 20px;
         }
       }
+    }
+
+    &__title {
+      color: #DBD3E9;
+      font-size: 500%;
+      font-size: 8vw;
+      padding: 20px 20px 0;
+      text-transform: uppercase;
     }
 
     &__post {
