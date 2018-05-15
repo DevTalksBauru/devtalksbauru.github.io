@@ -107,20 +107,23 @@ export default {
         overflow: auto;
       }
 
-      &--talks::before {
-        background-image: url(~assets/talks-bg.jpg);
+      &--talks::before,
+      &--podcasts::before {
+        background-position: bottom center;
+        background-repeat: no-repeat;
+        background-size: cover;
         content: '';
         position: fixed;
         height: 100%;
         width: 100%;
       }
+      
+      &--talks::before {
+        background-image: url(~assets/talks-bg.jpg);
+      }
 
       &--podcasts::before {
         background-image: url(~assets/podcasts-bg.jpg);
-        content: '';
-        position: fixed;
-        height: 100%;
-        width: 100%;
       }
     }
 
@@ -291,7 +294,8 @@ export default {
       background: black;
       padding: 15px;
       border-radius: 50px;
-      min-width: 90%;
+      max-width: 600px !important;
+      width: 100%;
     }
   }
 
