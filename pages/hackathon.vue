@@ -44,6 +44,16 @@ export default {
       }
     }
 
+    &__sidebar::before {
+      background: rgba(0,0,0,.6);
+      content: '';
+      left: 0;
+      height: 100%;
+      position: fixed;
+      width: 20%;
+      z-index: 1;
+    }
+
     &__content {
       padding: 0;
       position: relative;
@@ -231,7 +241,8 @@ export default {
     }
 
     &__video {
-      position: absolute;
+      left: 0;
+      position: fixed;
       bottom: 0;
       z-index: 0;
     }
