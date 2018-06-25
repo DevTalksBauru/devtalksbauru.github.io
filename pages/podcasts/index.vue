@@ -18,6 +18,10 @@
             router-link(to="/podcasts/03", class="sub-nav__link")
               h5 Devs & Q.A's
               span 07/05/18
+          li.page__list-item
+            router-link(to="/podcasts/04", class="sub-nav__link")
+              h5 Estágio
+              span 23/06/18
           li
 </template>
 
