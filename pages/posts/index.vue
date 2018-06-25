@@ -7,49 +7,6 @@
           span Talks
         ul.page__list.page__list--tiles
           li.page__list-item.page__list-item--talks
-<<<<<<< HEAD
-            router-link(to="/posts/#", class="sub-nav__link")
-              h5 PHP 7: Not For Kids
-              span 10/05/2018
-          li.page__list-item.page__list-item--talks
-            router-link(to="/posts/#", class="sub-nav__link")
-              h5 A Verdade sobe Frameworks
-              span 09/04/2018
-          li.page__list-item.page__list-item--talks
-            router-link(to="/posts/#", class="sub-nav__link")
-              h5 Home Office: Você e a sua empresa estão preparados?
-              span 22/03/2018
-          li.page__list-item.page__list-item--talks
-            router-link(to="/posts/#", class="sub-nav__link")
-              h5 Conhecendo o .NET Core
-              span 19/01/18
-          li.page__list-item.page__list-item--talks
-            router-link(to="/posts/#", class="sub-nav__link")
-              h5 Diminua seu código Java com Kotlin
-              span 23/11/17
-          li.page__list-item.page__list-item--talks
-            router-link(to="/posts/#", class="sub-nav__link")
-              h5 O Que não te contaram sobre a carreira de Dev
-              span 14/11/17
-          li.page__list-item.page__list-item--talks
-            router-link(to="/posts/#", class="sub-nav__link")
-              h5 Clean Code: Tornando o código mais fácil de entender
-              span 19/10/17
-          li.page__list-item.page__list-item--talks
-            router-link(to="/posts/#", class="sub-nav__link")
-              h5 Testes Automatizados para Web com Cucumber, Capybara e Ruby
-              span 31/08/17
-          li.page__list-item.page__list-item--talks
-            router-link(to="/posts/#", class="sub-nav__link")
-              h5 Funk ou Bossa Nova? Descobrindo o Gênero com Machine Learning
-              span 10/08/17
-          li.page__list-item.page__list-item--talks
-            router-link(to="/posts/#", class="sub-nav__link")
-              h5 Chatbots: O que Comem, onde vivem e porque falar sobre
-              span 20/07/17
-          li.page__list-item.page__list-item--talks
-            router-link(to="/posts/#", class="sub-nav__link")
-=======
             // router-link(to="/posts/09", class="sub-nav__link")
             a.sub-nav__link(href="https://docs.google.com/presentation/d/1B7UElyPJnHTL6-kih_NlN6FHE8sQzqvXg9nhpujkD50/present?includes_info_params=1#slide=id.gc6f73a04f_0_0", target="_blank")
               h5 BDD - Além da Automação
@@ -97,7 +54,6 @@
           li.page__list-item.page__list-item--talks
             // router-link(to="/posts/09", class="sub-nav__link")
             a.sub-nav__link(href="https://speakerdeck.com/matheusagcosta/back-end-and-front-end-em-harmonia-com-atomic-design", target="_blank")
->>>>>>> 7ebb0601de7948d84b8a2d04bf8badea84ca779d
               h5 Back-end & Front-end em Harmonia com Atomic Design
               span 06/07/17
           li.page__list-item.page__list-item--talks
