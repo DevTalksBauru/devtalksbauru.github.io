@@ -22,6 +22,10 @@
             router-link(to="/podcasts/04", class="sub-nav__link")
               h5 Estágio
               span 23/06/18
+          li.page__list-item
+            router-link(to="/podcasts/05", class="sub-nav__link")
+              h5 Eu Fico F#D!D0 Quando...
+              span 17/07/18
           li
 </template>
 
