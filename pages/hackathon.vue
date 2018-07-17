@@ -11,13 +11,6 @@
 
           a.hackathon__button(href="https://photos.app.goo.gl/KZGbVZYUojxUp7EI3", target="_blank") Veja como foi
 
-        .hackathon__video
-          .filter
-          |
-          video.fillWidth(autoplay, loop)
-            source(src="~/assets/hackathon-video-bg.mp4", type="video/mp4")
-            source(src="~/assets/hackathon-video-bg.webm", type="video/webm")
-            | Your browser does not support the video tag. I suggest you upgrade your browser.
 
 </template>
 
