@@ -26,6 +26,10 @@
             router-link(to="/podcasts/05", class="sub-nav__link")
               h5 Eu Fico F#D!D0 Quando...
               span 17/07/18
+          li.page__list-item
+            router-link(to="/podcasts/06", class="sub-nav__link")
+              h5 Legado e refatoração
+              span 17/07/18
           li
 </template>
 
