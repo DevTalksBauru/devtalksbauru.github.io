@@ -28,7 +28,7 @@
               span 17/07/18
           li.page__list-item
             router-link(to="/podcasts/06", class="sub-nav__link")
-              h5 Legado e refatoração
+              h5 Legado e Refatoração
               span 17/07/18
           li
 </template>
