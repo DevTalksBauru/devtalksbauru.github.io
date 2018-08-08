@@ -2,7 +2,8 @@
   dt-podcast
     h2(slot="title") Eu Fico F#D!D0 Quando...
     h4(slot="date") 17/07/2018
-    p(slot="description") Neste episódio falamos sobre aquelas situações do trabalho que nos deixam fudido! Compartilhe conosco o que te irrita durante o trabalho : devtalksbauru@gmail.com
+    p(slot="description") Neste episódio falamos sobre aquelas situações do trabalho que nos deixam fudido! Compartilhe conosco o que te irrita durante o trabalho: 
+      a(href="mailto:devtalksbauru@gmail.com") devtalksbauru@gmail.com
     iframe(slot="audio", src="https://archive.org/embed/DTPodcast5EuFicoFudidoQuando", width="100%", height="30")
 </template>
 
