@@ -9,7 +9,7 @@
 
         .page__post.post
           slot(name="title")
-            h2 Podcast Title
+            h2 Post Title
 
           slot(name="date")
             h4 Date
@@ -20,12 +20,10 @@
             p Description
 
           ul
-            li
-              span 🔗
-              slot(name="presentationLink")
-                span Presentation Link
+            slot(name="slides")
+              a(:href="href")
             slot(name="time")
-              li 🕐 Time
+              li Photos
             slot(name="speakerName")
               li 🗣 Speaker Name
             slot(name="speakerBio")
@@ -36,6 +34,13 @@
 
 <script>
 export default {
-  name: 'header'
+  name: 'header',
+
+  props: {
+    a: {
+      type: String,
+      href: 'href'
+    }
+  }
 }
 </script>

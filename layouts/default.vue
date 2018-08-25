@@ -189,12 +189,20 @@ export default {
       margin: 0 0 20px;
       width: 100%;
 
-      &--talks {
+      &--tiles {
         flex: 1 0 350px;
         align-self: stretch;
         box-sizing: border-box;
         max-width: 100%;
         margin: 0 20px 20px 0;
+        
+        @media (min-width: 989px) {
+          min-height: 200px;
+        }
+      }
+
+      &--empty {
+        min-height: 0;
       }
 
       a {
