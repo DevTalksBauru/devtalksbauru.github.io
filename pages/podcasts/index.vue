@@ -7,6 +7,10 @@
           span Podcasts
         ul.page__list.page__list--tiles
           li.page__list-item.page__list-item--tiles
+            router-link(to="/podcasts/08", class="sub-nav__link")
+              h5 Mas, então você ainda programa em PHP?
+              span 31/10/18
+          li.page__list-item.page__list-item--tiles
             router-link(to="/podcasts/07", class="sub-nav__link")
               h5 Tecnologias De Startups
               span 20/09/18
