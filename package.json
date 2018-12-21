@@ -15,7 +15,7 @@
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "lint:fix": "eslint --fix .js,.vue --ignore-path .gitignore .",
-    "postgenerate": "echo 'devtalksbauru.com' > dist/CNAME",
+    "postgenerate": "echo 'devtalksbauru.github.io' > dist/CNAME",
     "precommit": "npm run lint",
     "start": "nuxt start"
   },
