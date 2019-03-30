@@ -7,6 +7,36 @@
           span Talks
         ul.page__list.page__list--tiles
           li.page__list-item.page__list-item--tiles
+            //- a.sub-nav__link(href="https://speakerdeck.com/devtalksbauru/robos-para-mercado-financeiro-com-mql", target="_blank")
+            router-link(to="/posts/25-robos-para-mercado-financeiro-com-mql", class="sub-nav__link")
+              h5 Robôs para Mercado Financeiro com MQL
+              span 27/03/2019
+          li.page__list-item.page__list-item--tiles
+            // router-link(to="/posts/24", class="sub-nav__link")
+            a.sub-nav__link(href="#", target="_blank")
+              h5 Vue + GraphQL = ♥
+              span 26/01/2019
+          li.page__list-item.page__list-item--tiles
+            // router-link(to="/posts/24", class="sub-nav__link")
+            a.sub-nav__link(href="#", target="_blank")
+              h5 Construindo API em GraphQL
+              span 26/01/2019
+          li.page__list-item.page__list-item--tiles
+            // router-link(to="/posts/24", class="sub-nav__link")
+            a.sub-nav__link(href="#", target="_blank")
+              h5 Introdução a NoSQL com MongoDB
+              span 26/01/2019
+          li.page__list-item.page__list-item--tiles
+            // router-link(to="/posts/23", class="sub-nav__link")
+            a.sub-nav__link(href="#", target="_blank")
+              h5 Introdução ao universo React Native
+              span 30/10/2018
+          li.page__list-item.page__list-item--tiles
+            // router-link(to="/posts/22", class="sub-nav__link")
+            a.sub-nav__link(href="#", target="_blank")
+              h5 Go, Goroutines, Concorrência e Outros Bichos
+              span 13/09/2018
+          li.page__list-item.page__list-item--tiles
             // router-link(to="/posts/21", class="sub-nav__link")
             a.sub-nav__link(href="https://docs.google.com/presentation/d/1FlXklpTCZE_-TaQnOqEFLOlUiK2LD7Qt9eybkevR0BM/present?includes_info_params=1#slide=id.g3f96bb0e7d_0_10", target="_blank")
               h5 Como Garantir a Qualidade da sua Aplicação
@@ -67,13 +97,13 @@
               h5 Chatbots - O que comem, onde vivem e porque falar sobre
               span 20/07/17
           li.page__list-item.page__list-item--tiles
-            // router-link(to="/posts/09", class="sub-nav__link")
-            a.sub-nav__link(href="https://speakerdeck.com/matheusagcosta/back-end-and-front-end-em-harmonia-com-atomic-design", target="_blank")
+            router-link(to="/posts/09-back-end-e-front-end-em-harmonia-com-atomic-design", class="sub-nav__link")
               h5 Back-end & Front-end em Harmonia com Atomic Design
               span 06/07/17
+            //- a.sub-nav__link(href="https://speakerdeck.com/matheusagcosta/back-end-and-front-end-em-harmonia-com-atomic-design", target="_blank")
           li.page__list-item.page__list-item--tiles
-            // router-link(to="/posts/08", class="sub-nav__link")
-            a.sub-nav__link(href="https://slides.com/helderdiin/bff-pattern#/", target="_blank")
+            //- a.sub-nav__link(href="https://slides.com/helderdiin/bff-pattern#/", target="_blank")
+            router-link(to="/posts/08-bff-pattern-seu-melhor-amigo-backend", class="sub-nav__link")
               h5 BFF Pattern - Seu Melhor Amigo Backend
               span 23/06/17
           li.page__list-item.page__list-item--tiles
@@ -108,7 +138,7 @@
               span 05/11/16
           // Keep this two list items to make layout consistent
           li.page__list-item--tiles.page__list-item--empty
-          
+
 </template>
 
 <script>

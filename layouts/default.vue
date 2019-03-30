@@ -117,7 +117,7 @@ export default {
         height: 100%;
         width: 100%;
       }
-      
+
       &--talks::before {
         background-image: url(~assets/talks-bg.jpg);
       }
@@ -195,7 +195,7 @@ export default {
         box-sizing: border-box;
         max-width: 100%;
         margin: 0 20px 20px 0;
-        
+
         @media (min-width: 989px) {
           min-height: 200px;
         }
@@ -252,6 +252,38 @@ export default {
       text-align: center;
     }
 
+    &__slides {
+      background: black;
+      border-radius: 10px;
+      width: 90%;
+    }
+
+    &__nav {
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 0 2rem;
+
+      a {
+        margin: 0 1rem;
+        position: relative;
+      }
+
+      a:not(:last-child)::after {
+        background-color: black;
+        border-radius: 50%;
+        bottom: 0;
+        content: "";
+        height: 5px;
+        margin: auto;
+        position: absolute;
+        right: -1rem;
+        text-decoration: none;
+        top: 0;
+        width: 5px;
+      }
+    }
+
     h2 {
       font-size: 4rem;
       text-transform: uppercase;
@@ -265,6 +297,7 @@ export default {
       font-size: 1.5rem;
     }
 
+    a,
     p {
       margin-top: 0;
 

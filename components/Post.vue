@@ -19,17 +19,15 @@
           slot(name="description")
             p Description
 
-          ul
-            slot(name="slides")
+          nav.post__nav
+            slot(name="link")
               a(:href="href")
-            slot(name="time")
-              li Photos
-            slot(name="speakerName")
-              li 🗣 Speaker Name
-            slot(name="speakerBio")
-              li ⚽️ Speaker Bio
-            slot(name="location")
-              li 🗺 Location
+
+          .post__slides
+            slot(name="slides")
+              p
+
+
 </template>
 
 <script>

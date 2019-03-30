@@ -15,7 +15,7 @@
               g(data-name='>')
                 path.cls-2(data-name='Rounded Rectangle 1 copy 6', d='M1486.48 1030.74a49.19 49.19 0 0 1-7.56 9.86l-170.32 173.53a49.068 49.068 0 0 1-69.74.24 49.928 49.928 0 0 1-.24-70.25l139.95-142.57-137.63-138.077a50.432 50.432 0 0 1-.24-70.58 48.674 48.674 0 0 1 69.55-.24l171.82 172.377a50.444 50.444 0 0 1 4.41 65.71z')
       li.nav__item.nav__item--home
-        router-link(to="/", class="nav__link")
+        router-link(to="/", class="nav__link nav__link--logo")
           svg.nav__icon(xmlns="http://www.w3.org/2000/svg", viewbox="0 0 360 360")
             path(d="M352.163 163.115L198.92 9.87c-10.45-10.448-27.39-10.448-37.84 0L7.838 163.116c-7.652 7.652-9.94 19.16-5.8 29.158 4.142 9.998 13.898 16.516 24.72 16.516h20.76v114.573c0 19.112 15.494 34.603 34.604 34.603h195.76c19.11 0 34.602-15.492 34.602-34.603V208.79h20.762c10.82 0 20.578-6.52 24.72-16.517 4.14-9.998 1.85-21.506-5.8-29.158zM220.43 307.785h-80.86v-45.583c0-22.33 18.1-40.43 40.43-40.43s40.43 18.1 40.43 40.43v45.583z")
           | Home
@@ -122,7 +122,8 @@ export default {
         transform: translateX(-30px);
       }
 
-      &.nuxt-link-exact-active {
+      &.nuxt-link-exact-active,
+      &:not(.nav__link--logo).nuxt-link-active {
         color: white;
         cursor: default;
 
@@ -143,6 +144,7 @@ export default {
       margin: 0 10px 0 0;
       width: 2vw;
 
+      .nuxt-link-active:not(.nav__link--logo) &,
       .nuxt-link-exact-active & {
         fill: white;
       }
