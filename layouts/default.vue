@@ -116,6 +116,7 @@ export default {
         position: fixed;
         height: 100%;
         width: 100%;
+        z-index: -1;
       }
 
       &--talks::before {
@@ -163,14 +164,14 @@ export default {
 
       &--talks,
       &--podcasts {
-        mix-blend-mode: hard-light;
+        mix-blend-mode: unset;
         padding: 0;
       }
     }
 
     &__list {
       align-items: stretch;
-      background: #DBD3E9;
+      background: rgba(219, 211, 233, .8);
       display: flex;
       flex-wrap: wrap;
       padding: 40px 20px 20px;
@@ -236,7 +237,7 @@ export default {
 
     &__post {
       align-items: center;
-      background: #DBD3E9;
+      background: rgba(219, 211, 233, .8);
       box-sizing: border-box;
       display: flex;
       flex-direction: column;
@@ -267,6 +268,10 @@ export default {
       a {
         margin: 0 1rem;
         position: relative;
+
+        &:hover {
+          text-decoration: none;
+        }
       }
 
       a:not(:last-child)::after {
@@ -317,7 +322,7 @@ export default {
       width: 48px;
 
       &:hover {
-        background: #DBD3E9;
+        background: rgba(219, 211, 233, .8);
 
         * {
           fill: black;
