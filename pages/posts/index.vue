@@ -7,58 +7,47 @@
           span Talks
         ul.page__list.page__list--tiles
           li.page__list-item.page__list-item--tiles
-            //- a.sub-nav__link(href="https://speakerdeck.com/devtalksbauru/robos-para-mercado-financeiro-com-mql", target="_blank")
             router-link(to="/posts/25-robos-para-mercado-financeiro-com-mql", class="sub-nav__link")
               h5 Robôs para Mercado Financeiro com MQL
               span 27/03/2019
           li.page__list-item.page__list-item--tiles
-            // router-link(to="/posts/24", class="sub-nav__link")
-            a.sub-nav__link(href="#", target="_blank")
+            router-link(to="/posts/24-vue-graphql-love", class="sub-nav__link")
               h5 Vue + GraphQL = ♥
               span 26/01/2019
           li.page__list-item.page__list-item--tiles
-            // router-link(to="/posts/24", class="sub-nav__link")
-            a.sub-nav__link(href="#", target="_blank")
+            router-link(to="/posts/24-construindo-api-em-graphql", class="sub-nav__link")
               h5 Construindo API em GraphQL
               span 26/01/2019
           li.page__list-item.page__list-item--tiles
-            // router-link(to="/posts/24", class="sub-nav__link")
-            a.sub-nav__link(href="#", target="_blank")
+            router-link(to="/posts/24-introducao-a-nosql-com-mongodb", class="sub-nav__link")
               h5 Introdução a NoSQL com MongoDB
               span 26/01/2019
           li.page__list-item.page__list-item--tiles
-            // router-link(to="/posts/23", class="sub-nav__link")
-            a.sub-nav__link(href="#", target="_blank")
+            router-link(to="/posts/23-introducao-ao-universo-react-native", class="sub-nav__link")
               h5 Introdução ao universo React Native
               span 30/10/2018
           li.page__list-item.page__list-item--tiles
-            // router-link(to="/posts/22", class="sub-nav__link")
-            a.sub-nav__link(href="#", target="_blank")
+            router-link(to="/posts/22-go-goroutines-concorrencia-e-outros-bichos", class="sub-nav__link")
               h5 Go, Goroutines, Concorrência e Outros Bichos
               span 13/09/2018
           li.page__list-item.page__list-item--tiles
-            // router-link(to="/posts/21", class="sub-nav__link")
-            a.sub-nav__link(href="https://docs.google.com/presentation/d/1FlXklpTCZE_-TaQnOqEFLOlUiK2LD7Qt9eybkevR0BM/present?includes_info_params=1#slide=id.g3f96bb0e7d_0_10", target="_blank")
+            router-link(to="/posts/21-como-garantir-a-qualidade-da-sua-aplicacao", class="sub-nav__link")
               h5 Como Garantir a Qualidade da sua Aplicação
               span 13/08/2018
           li.page__list-item.page__list-item--tiles
-            // router-link(to="/posts/20", class="sub-nav__link")
-            a.sub-nav__link(href="https://docs.google.com/presentation/d/1B7UElyPJnHTL6-kih_NlN6FHE8sQzqvXg9nhpujkD50/present?includes_info_params=1#slide=id.gc6f73a04f_0_0", target="_blank")
+            router-link(to="/posts/20-bdd-alem-da-automacao", class="sub-nav__link")
               h5 BDD - Além da Automação
               span 08/06/2018
           li.page__list-item.page__list-item--tiles
-            // router-link(to="/posts/19", class="sub-nav__link")
-            a.sub-nav__link(href="https://speakerdeck.com/omarkdev/php7-not-for-kids", target="_blank")
+            router-link(to="/posts/19-php-7-not-for-kids", class="sub-nav__link")
               h5 PHP 7: Not For Kids
               span 10/05/2018
           li.page__list-item.page__list-item--tiles
-            // router-link(to="/posts/18", class="sub-nav__link")
-            a.sub-nav__link(href="https://drive.google.com/file/d/1uB2Cqjrbp2wXFxdUccp9IJY92-9zrHNt/view?usp=sharing", target="_blank")
-              h5 A Verdade sobe Frameworks
+            router-link(to="/posts/18-a-verdade-sobre-frameworks", class="sub-nav__link")
+              h5 A Verdade sobre Frameworks
               span 09/04/2018
           li.page__list-item.page__list-item--tiles
-            // router-link(to="/posts/17", class="sub-nav__link")
-            a.sub-nav__link(href="https://docs.google.com/presentation/d/e/2PACX-1vTYFkCaXtMgDIHXCmWiCVjNH33oPjWM2lhNcQQZkc86Nv853u_ImpCNoacdI6M6jIRgmgOrJB-c-JQ3/pub?start=false&loop=false&delayms=3000", target="_blank")
+            router-link(to="/posts/17-home-office-voce-e-a-sua-empresa-estao-preparados", class="sub-nav__link")
               h5 Home Office: Você e a sua empresa estão preparados?
               span 22/03/2018
           li.page__list-item.page__list-item--tiles
