@@ -7,6 +7,10 @@
           span Talks
         ul.page__list.page__list--tiles
           li.page__list-item.page__list-item--tiles
+            router-link(to="/posts/27-construindo-microsservicos-a-partir-de-um-monolito", class="sub-nav__link")
+              h5 Construindo Microsserviços a partir de um Monolito
+              span 29/08/2019
+          li.page__list-item.page__list-item--tiles
             router-link(to="/posts/25-robos-para-mercado-financeiro-com-mql", class="sub-nav__link")
               h5 Robôs para Mercado Financeiro com MQL
               span 27/03/2019
@@ -125,7 +129,11 @@
             a.sub-nav__link(href="https://www.sympla.com.br/design-patterns-na-vida-real__98559", target="_blank")
               h5 Design Patterns na Vida Real
               span 05/11/16
-          // Keep this two list items to make layout consistent
+          // Keep this list items to make layout consistent
+          li.page__list-item--tiles.page__list-item--empty
+          li.page__list-item--tiles.page__list-item--empty
+          li.page__list-item--tiles.page__list-item--empty
+          li.page__list-item--tiles.page__list-item--empty
           li.page__list-item--tiles.page__list-item--empty
 
 </template>
