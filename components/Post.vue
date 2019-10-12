@@ -27,7 +27,11 @@
             slot(name="slides")
               p
 
+          hr.post__divider
 
+          .post__comments
+            h4 Comentários
+            vue-disqus(shortname="devtalksbauru")
 </template>
 
 <script>

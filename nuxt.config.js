@@ -8,18 +8,18 @@ module.exports = {
       { charset: 'UTF-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1, user-scalable=no' },
       { hid: 'description', name: 'description', content: 'Developers Community from Bauru Brazil' },
-      { name: 'theme-color', content: '#212020'},
-      { property: 'og:locale', content: 'en_US'},
-      { property: 'og:title', content: 'DevTalks Bauru'},
-      { property: 'og:description', content: 'Developers Community from Bauru Brazil'},
-      { property: 'og:site_name', content: 'DevTalks Bauru'},
-      { property: 'og:url', content: 'https://devtalksbauru.github.io'},
-      { property: 'og:image', content: '/android-chrome-512x512.png'},
-      { property: 'og:type', content: 'website'},
-      { name: 'twitter:title', content: 'DevTalks Bauru'},
-      { name: 'twitter:site', content: '@devtalksbauru'},
-      { name: 'keywords', content: 'development, talks, speakers, bauru, devtalks'},
-      { name: 'author', content: 'DevTalks Bauru'}
+      { name: 'theme-color', content: '#212020' },
+      { property: 'og:locale', content: 'en_US' },
+      { property: 'og:title', content: 'DevTalks Bauru' },
+      { property: 'og:description', content: 'Developers Community from Bauru Brazil' },
+      { property: 'og:site_name', content: 'DevTalks Bauru' },
+      { property: 'og:url', content: 'https://devtalksbauru.github.io' },
+      { property: 'og:image', content: '/android-chrome-512x512.png' },
+      { property: 'og:type', content: 'website' },
+      { name: 'twitter:title', content: 'DevTalks Bauru' },
+      { name: 'twitter:site', content: '@devtalksbauru' },
+      { name: 'keywords', content: 'development, talks, speakers, bauru, devtalks' },
+      { name: 'author', content: 'DevTalks Bauru' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
@@ -58,5 +58,11 @@ module.exports = {
         source: 'src'
       }
     }
-  }
+  },
+  /*
+  ** Plugins
+  */
+  plugins: [
+    '~/plugins/disqus'
+  ]
 }

@@ -343,6 +343,11 @@ export default {
       max-width: 600px !important;
       width: 100%;
     }
+
+    &__comments {
+      border-radius: 10px;
+      width: 90%;
+    }
   }
 
 </style>
