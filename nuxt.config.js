@@ -64,5 +64,11 @@ module.exports = {
   */
   plugins: [
     '~/plugins/disqus'
-  ]
+  ],
+  /*
+  ** Environment Variables
+  */
+  env: {
+    DISQUS_SHORTNAME: 'devtalksbauru'
+  }
 }

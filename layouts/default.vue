@@ -345,7 +345,6 @@ export default {
     }
 
     &__comments {
-      border-radius: 10px;
       width: 90%;
     }
   }

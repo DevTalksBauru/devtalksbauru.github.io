@@ -31,7 +31,7 @@
 
           .post__comments
             h4 Comentários
-            vue-disqus(shortname="devtalksbauru")
+            vue-disqus(:shortname="disqusShortname", :url="currentUrl")
 </template>
 
 <script>
@@ -42,6 +42,16 @@ export default {
     a: {
       type: String,
       href: 'href'
+    }
+  },
+
+  computed: {
+    disqusShortname: function () {
+      return process.env.DISQUS_SHORTNAME
+    },
+
+    currentUrl: function () {
+      return this.$route.path
     }
   }
 }
