@@ -343,6 +343,10 @@ export default {
       max-width: 600px !important;
       width: 100%;
     }
+
+    &__comments {
+      width: 90%;
+    }
   }
 
 </style>
